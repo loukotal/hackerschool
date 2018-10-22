@@ -1,0 +1,2 @@
+# hackerschool
+Repository for  hackerschool.
