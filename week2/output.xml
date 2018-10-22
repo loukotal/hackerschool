@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.6 on darwin)" generated="20181022 20:06:23.949">
+<suite id="s1" name="First Test" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/first_test.robot">
+<test id="s1-t1" name="First Test">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Message</arg>
+</arguments>
+<msg timestamp="20181022 20:06:24.058" level="INFO">Message</msg>
+<status status="PASS" starttime="20181022 20:06:24.058" endtime="20181022 20:06:24.058"></status>
+</kw>
+<kw name="Get Time And Print To Log">
+<kw name="Get Time" library="BuiltIn">
+<doc>Returns the given time in the requested format.</doc>
+<assign>
+<var>${local_variable}</var>
+</assign>
+<msg timestamp="20181022 20:06:24.059" level="INFO">${local_variable} = 2018-10-22 20:06:24</msg>
+<status status="PASS" starttime="20181022 20:06:24.059" endtime="20181022 20:06:24.059"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${local_variable}</arg>
+</arguments>
+<msg timestamp="20181022 20:06:24.059" level="INFO">2018-10-22 20:06:24</msg>
+<status status="PASS" starttime="20181022 20:06:24.059" endtime="20181022 20:06:24.060"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${initial_variable}</arg>
+</arguments>
+<status status="PASS" starttime="20181022 20:06:24.060" endtime="20181022 20:06:24.060"></status>
+</kw>
+<status status="PASS" starttime="20181022 20:06:24.059" endtime="20181022 20:06:24.060"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Teardown</arg>
+</arguments>
+<msg timestamp="20181022 20:06:24.060" level="INFO">Teardown</msg>
+<status status="PASS" starttime="20181022 20:06:24.060" endtime="20181022 20:06:24.060"></status>
+</kw>
+<status status="PASS" starttime="20181022 20:06:24.058" endtime="20181022 20:06:24.060" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181022 20:06:23.950" endtime="20181022 20:06:24.061"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="First Test">First Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
