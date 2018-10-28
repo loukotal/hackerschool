@@ -1,62 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.6 on darwin)" generated="20181022 20:06:23.949">
-<suite id="s1" name="First Test" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/first_test.robot">
-<test id="s1-t1" name="First Test">
-<kw name="Log" library="BuiltIn" type="setup">
-<doc>Logs the given message with the given level.</doc>
+<robot generator="Robot 3.0.4 (Python 3.6.6 on darwin)" generated="20181028 21:23:23.415">
+<suite id="s1" name="First Hw" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/week2/Test/first_hw.robot">
+<test id="s1-t1" name="User Input">
+<kw name="Get Input and Compare" library="hw2_keywords">
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
 <arguments>
-<arg>Message</arg>
+<arg>Please input an integer value</arg>
 </arguments>
-<msg timestamp="20181022 20:06:24.058" level="INFO">Message</msg>
-<status status="PASS" starttime="20181022 20:06:24.058" endtime="20181022 20:06:24.058"></status>
-</kw>
-<kw name="Get Time And Print To Log">
-<kw name="Get Time" library="BuiltIn">
-<doc>Returns the given time in the requested format.</doc>
 <assign>
-<var>${local_variable}</var>
+<var>${user_input}</var>
 </assign>
-<msg timestamp="20181022 20:06:24.059" level="INFO">${local_variable} = 2018-10-22 20:06:24</msg>
-<status status="PASS" starttime="20181022 20:06:24.059" endtime="20181022 20:06:24.059"></status>
+<msg timestamp="20181028 21:23:24.678" level="INFO">${user_input} = 42</msg>
+<status status="PASS" starttime="20181028 21:23:23.455" endtime="20181028 21:23:24.678"></status>
 </kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
 <arguments>
-<arg>${local_variable}</arg>
+<arg>${EXPECTED_VALUE}</arg>
 </arguments>
-<msg timestamp="20181022 20:06:24.059" level="INFO">2018-10-22 20:06:24</msg>
-<status status="PASS" starttime="20181022 20:06:24.059" endtime="20181022 20:06:24.060"></status>
+<assign>
+<var>${EXPECTED_VALUE}</var>
+</assign>
+<msg timestamp="20181028 21:23:24.678" level="INFO">${EXPECTED_VALUE} = 2</msg>
+<status status="PASS" starttime="20181028 21:23:24.678" endtime="20181028 21:23:24.679"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
 <arguments>
-<arg>${initial_variable}</arg>
+<arg>${user_input}</arg>
+<arg>${EXPECTED_VALUE}</arg>
+<arg>Input value should be equal to expected value.</arg>
 </arguments>
-<status status="PASS" starttime="20181022 20:06:24.060" endtime="20181022 20:06:24.060"></status>
+<msg timestamp="20181028 21:23:24.679" level="FAIL">Input value should be equal to expected value.: 42 != 2</msg>
+<status status="FAIL" starttime="20181028 21:23:24.679" endtime="20181028 21:23:24.679"></status>
 </kw>
-<status status="PASS" starttime="20181022 20:06:24.059" endtime="20181022 20:06:24.060"></status>
+<status status="FAIL" starttime="20181028 21:23:23.455" endtime="20181028 21:23:24.680"></status>
 </kw>
-<kw name="Log" library="BuiltIn" type="teardown">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>Teardown</arg>
-</arguments>
-<msg timestamp="20181022 20:06:24.060" level="INFO">Teardown</msg>
-<status status="PASS" starttime="20181022 20:06:24.060" endtime="20181022 20:06:24.060"></status>
-</kw>
-<status status="PASS" starttime="20181022 20:06:24.058" endtime="20181022 20:06:24.060" critical="yes"></status>
+<status status="FAIL" starttime="20181028 21:23:23.454" endtime="20181028 21:23:24.681" critical="yes">Input value should be equal to expected value.: 42 != 2</status>
 </test>
-<status status="PASS" starttime="20181022 20:06:23.950" endtime="20181022 20:06:24.061"></status>
+<status status="FAIL" starttime="20181028 21:23:23.419" endtime="20181028 21:23:24.681"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="First Test">First Test</stat>
+<stat pass="0" fail="1" id="s1" name="First Hw">First Hw</stat>
 </suite>
 </statistics>
 <errors>

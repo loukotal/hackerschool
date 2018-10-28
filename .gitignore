@@ -1,2 +1,4 @@
-*.me
-/libspecs/
+libspecs/*
+*.md
+ignore.me
+/week2/libspecs/*
