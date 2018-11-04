@@ -1,0 +1,18 @@
+*** Settings ***
+Library     SeleniumLibrary
+
+*** Keywords ***
+Login to Mahara
+    [Arguments]    ${username}    ${password}
+    SeleniumLibrary.Input Text    id=login_login_username    ${username}
+    SeleniumLibrary.Input Password    id=login_login_password    ${password}
+    SeleniumLibrary.Click Button    Login    # value in unnecessary (it's more clean not to use it)   
+    
+Open browser to Mahara
+    SeleniumLibrary.Open Browser    https://demo.mahara.org/    chrome
+    SeleniumLibrary.Maximize Browser Window
+     
+    
+ Capture Screenshot and Close Browser
+     SeleniumLibrary.Capture Page Screenshot
+     SeleniumLibrary.Close Browser
