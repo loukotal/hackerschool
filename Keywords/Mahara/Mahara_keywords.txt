@@ -16,3 +16,11 @@ Open browser to Mahara
  Capture Screenshot and Close Browser
      SeleniumLibrary.Capture Page Screenshot
      SeleniumLibrary.Close Browser
+     
+Mahara Valid Login
+    [Arguments]    ${username}    ${password}    ${name}
+    Open browser to Mahara
+    Login to Mahara    ${username}    ${password}
+    SeleniumLibrary.Wait Until Page Contains Element    https://demo.mahara.org/user/${name}
+    SeleniumLibrary.Page Should Contain Element    xpath=//a[@class="user-icon"]    # /html/body/header/div/div/div[2]/a
+    Capture Screenshot and Close Browser

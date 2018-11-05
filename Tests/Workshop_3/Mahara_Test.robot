@@ -3,6 +3,7 @@ Library    SeleniumLibrary
 Test Setup    Open browser to Mahara
 Test Teardown    Capture Screenshot and Close Browser
 Resource    ../../Keywords/Mahara/Mahara_keywords.txt
+Test Template    Mahara Valid Login
 
 *** Test Cases ***
 Mahara Invalid Login
@@ -13,6 +14,5 @@ Mahara Invalid Login
     
 Mahara Admin Login
     Login to Mahara    admin    MaharaDemo
-    SeleniumLibrary.Wait Until Page Contains Element    https://demo.mahara.org/user/james-jetts
+    SeleniumLibrary.Wait Until Page Contains Element   href=https://demo.mahara.org/user/james-jetts
     SeleniumLibrary.Page Should Contain Element    xpath=//a[@class="user-icon"]    # /html/body/header/div/div/div[2]/a        
-    
