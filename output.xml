@@ -1,180 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on darwin)" generated="20181104 21:56:02.422">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on darwin)" generated="20181105 18:51:12.969">
 <suite id="s1" name="Hackerschool" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool">
-<suite id="s1-s1" name="Week3" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/week3">
-<suite id="s1-s1-s1" name="Tests" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/week3/Tests">
-<suite id="s1-s1-s1-s1" name="Workshop" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/week3/Tests/Workshop">
-<suite id="s1-s1-s1-s1-s1" name="Mahara Test" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/week3/Tests/Workshop/Mahara_Test.robot">
-<test id="s1-s1-s1-s1-s1-t1" name="Mahara Invalid Login">
-<kw name="Open browser to Mahara" library="Mahara_keywords" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
+<suite id="s1-s1" name="Hs4 Start" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/hs4_start">
+<suite id="s1-s1-s1" name="Tests" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/hs4_start/Tests">
+<suite id="s1-s1-s1-s1" name="Workshop 4" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/hs4_start/Tests/Workshop_4">
+<suite id="s1-s1-s1-s1-s1" name="Sign Up Testing" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/hs4_start/Tests/Workshop_4/Sign_Up_Testing.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Sign Up Testing">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>https://demo.mahara.org/</arg>
+<arg>http://automationpractice.com/index.php</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20181104 21:56:02.615" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
+<msg timestamp="20181105 18:51:13.354" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181104 21:56:02.629" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181104 21:56:02.628" endtime="20181104 21:56:02.629"></status>
+<msg timestamp="20181105 18:51:13.370" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181105 18:51:13.369" endtime="20181105 18:51:13.370"></status>
 </kw>
-<msg timestamp="20181104 21:56:02.634" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+<msg timestamp="20181105 18:51:13.374" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 </msg>
-<status status="FAIL" starttime="20181104 21:56:02.615" endtime="20181104 21:56:02.634"></status>
+<status status="FAIL" starttime="20181105 18:51:13.353" endtime="20181105 18:51:13.375"></status>
 </kw>
-<status status="FAIL" starttime="20181104 21:56:02.614" endtime="20181104 21:56:02.635"></status>
-</kw>
-<kw name="Capture Screenshot and Close Browser" library="Mahara_keywords" type="teardown">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181104 21:56:02.637" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181104 21:56:02.637" endtime="20181104 21:56:02.637"></status>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181104 21:56:02.638" endtime="20181104 21:56:02.638"></status>
+<status status="PASS" starttime="20181105 18:51:13.375" endtime="20181105 18:51:13.376"></status>
 </kw>
-<status status="PASS" starttime="20181104 21:56:02.636" endtime="20181104 21:56:02.638"></status>
-</kw>
-<status status="FAIL" starttime="20181104 21:56:02.614" endtime="20181104 21:56:02.639" critical="yes">Setup failed:
+<status status="FAIL" starttime="20181105 18:51:13.352" endtime="20181105 18:51:13.376" critical="yes">Setup failed:
 WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
 </status>
 </test>
-<test id="s1-s1-s1-s1-s1-t2" name="Mahara Admin Login">
-<kw name="Open browser to Mahara" library="Mahara_keywords" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>https://demo.mahara.org/</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20181104 21:56:02.641" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181104 21:56:02.646" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181104 21:56:02.645" endtime="20181104 21:56:02.646"></status>
-</kw>
-<msg timestamp="20181104 21:56:02.647" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-</msg>
-<status status="FAIL" starttime="20181104 21:56:02.640" endtime="20181104 21:56:02.647"></status>
-</kw>
-<status status="FAIL" starttime="20181104 21:56:02.640" endtime="20181104 21:56:02.647"></status>
-</kw>
-<kw name="Capture Screenshot and Close Browser" library="Mahara_keywords" type="teardown">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181104 21:56:02.648" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181104 21:56:02.648" endtime="20181104 21:56:02.649"></status>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181104 21:56:02.649" endtime="20181104 21:56:02.649"></status>
-</kw>
-<status status="PASS" starttime="20181104 21:56:02.648" endtime="20181104 21:56:02.649"></status>
-</kw>
-<status status="FAIL" starttime="20181104 21:56:02.639" endtime="20181104 21:56:02.649" critical="yes">Setup failed:
-WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-</status>
-</test>
-<test id="s1-s1-s1-s1-s1-t3" name="Mahara Valid Login">
-<kw name="Open browser to Mahara" library="Mahara_keywords" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>https://demo.mahara.org/</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20181104 21:56:02.651" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181104 21:56:02.656" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181104 21:56:02.655" endtime="20181104 21:56:02.656"></status>
-</kw>
-<msg timestamp="20181104 21:56:02.657" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-</msg>
-<status status="FAIL" starttime="20181104 21:56:02.651" endtime="20181104 21:56:02.657"></status>
-</kw>
-<status status="FAIL" starttime="20181104 21:56:02.650" endtime="20181104 21:56:02.657"></status>
-</kw>
-<kw name="Capture Screenshot and Close Browser" library="Mahara_keywords" type="teardown">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181104 21:56:02.659" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181104 21:56:02.658" endtime="20181104 21:56:02.659"></status>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181104 21:56:02.659" endtime="20181104 21:56:02.659"></status>
-</kw>
-<status status="PASS" starttime="20181104 21:56:02.658" endtime="20181104 21:56:02.660"></status>
-</kw>
-<status status="FAIL" starttime="20181104 21:56:02.650" endtime="20181104 21:56:02.660" critical="yes">Setup failed:
-WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-</status>
-</test>
-<test id="s1-s1-s1-s1-s1-t4" name="Mahara Valid Login">
-<kw name="Open browser to Mahara" library="Mahara_keywords" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>https://demo.mahara.org/</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20181104 21:56:02.663" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181104 21:56:02.668" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181104 21:56:02.667" endtime="20181104 21:56:02.669"></status>
-</kw>
-<msg timestamp="20181104 21:56:02.670" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-</msg>
-<status status="FAIL" starttime="20181104 21:56:02.662" endtime="20181104 21:56:02.670"></status>
-</kw>
-<status status="FAIL" starttime="20181104 21:56:02.662" endtime="20181104 21:56:02.671"></status>
-</kw>
-<kw name="Capture Screenshot and Close Browser" library="Mahara_keywords" type="teardown">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181104 21:56:02.673" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181104 21:56:02.672" endtime="20181104 21:56:02.673"></status>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181104 21:56:02.673" endtime="20181104 21:56:02.674"></status>
-</kw>
-<status status="PASS" starttime="20181104 21:56:02.671" endtime="20181104 21:56:02.674"></status>
-</kw>
-<status status="FAIL" starttime="20181104 21:56:02.661" endtime="20181104 21:56:02.674" critical="yes">Setup failed:
-WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
-</status>
-</test>
-<status status="FAIL" starttime="20181104 21:56:02.485" endtime="20181104 21:56:02.675"></status>
+<status status="FAIL" starttime="20181105 18:51:13.214" endtime="20181105 18:51:13.377"></status>
 </suite>
-<status status="FAIL" starttime="20181104 21:56:02.483" endtime="20181104 21:56:02.678"></status>
+<status status="FAIL" starttime="20181105 18:51:13.212" endtime="20181105 18:51:13.379"></status>
 </suite>
-<status status="FAIL" starttime="20181104 21:56:02.481" endtime="20181104 21:56:02.679"></status>
+<status status="FAIL" starttime="20181105 18:51:13.211" endtime="20181105 18:51:13.380"></status>
 </suite>
-<status status="FAIL" starttime="20181104 21:56:02.479" endtime="20181104 21:56:02.680"></status>
+<status status="FAIL" starttime="20181105 18:51:13.207" endtime="20181105 18:51:13.381"></status>
 </suite>
-<status status="FAIL" starttime="20181104 21:56:02.459" endtime="20181104 21:56:02.681"></status>
+<status status="FAIL" starttime="20181105 18:51:13.187" endtime="20181105 18:51:13.382"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="4">Critical Tests</stat>
-<stat pass="0" fail="4">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="4" id="s1" name="Hackerschool">Hackerschool</stat>
-<stat pass="0" fail="4" id="s1-s1" name="Week3">Hackerschool.Week3</stat>
-<stat pass="0" fail="4" id="s1-s1-s1" name="Tests">Hackerschool.Week3.Tests</stat>
-<stat pass="0" fail="4" id="s1-s1-s1-s1" name="Workshop">Hackerschool.Week3.Tests.Workshop</stat>
-<stat pass="0" fail="4" id="s1-s1-s1-s1-s1" name="Mahara Test">Hackerschool.Week3.Tests.Workshop.Mahara Test</stat>
+<stat pass="0" fail="1" id="s1" name="Hackerschool">Hackerschool</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Hs4 Start">Hackerschool.Hs4 Start</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Tests">Hackerschool.Hs4 Start.Tests</stat>
+<stat pass="0" fail="1" id="s1-s1-s1-s1" name="Workshop 4">Hackerschool.Hs4 Start.Tests.Workshop 4</stat>
+<stat pass="0" fail="1" id="s1-s1-s1-s1-s1" name="Sign Up Testing">Hackerschool.Hs4 Start.Tests.Workshop 4.Sign Up Testing</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20181104 21:56:02.661" level="WARN">Multiple test cases with name 'Mahara Valid Login' executed in test suite 'Hackerschool.Week3.Tests.Workshop.Mahara Test'.</msg>
 </errors>
 </robot>
