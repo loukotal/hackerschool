@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.6 on darwin)" generated="20181111 15:29:32.141">
+<suite id="s1" name="HW4" source="/Users/lukasloukota/Work/Programming/Python/hackerschool/hackerschool/week4/Tests/HW4.robot">
+<test id="s1-t1" name="Filter By Lowest Price First">
+<kw name="Open Browser On Women Category" library="eshop_keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url_women_cat}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181111 15:29:32.271" level="INFO">Opening browser 'firefox' to base url 'http://automationpractice.com/index.php?id_category=3&amp;controller=category'.</msg>
+<status status="PASS" starttime="20181111 15:29:32.271" endtime="20181111 15:29:38.785"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181111 15:29:38.786" endtime="20181111 15:29:39.186"></status>
+</kw>
+<status status="PASS" starttime="20181111 15:29:32.270" endtime="20181111 15:29:39.187"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${product_dropdown_filter}</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20181111 15:29:39.188" level="INFO">Selecting options from selection list 'id=selectProductSort' by index 1.</msg>
+<status status="PASS" starttime="20181111 15:29:39.187" endtime="20181111 15:29:39.467"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${product_list}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 15:29:39.467" endtime="20181111 15:29:39.472"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${product_list}</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<msg timestamp="20181111 15:29:39.472" level="INFO">Selecting options from selection list 'class=product_list' by index 1.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181111 15:29:39.652" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181111 15:29:39.479" endtime="20181111 15:29:39.652"></status>
+</kw>
+<msg timestamp="20181111 15:29:39.654" level="FAIL">List with locator 'class=product_list' not found.</msg>
+<status status="FAIL" starttime="20181111 15:29:39.472" endtime="20181111 15:29:39.654"></status>
+</kw>
+<kw name="Close Browser and Capture Screenshot" library="eshop_keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181111 15:29:39.791" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181111 15:29:39.655" endtime="20181111 15:29:39.792"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181111 15:29:39.792" endtime="20181111 15:29:40.302"></status>
+</kw>
+<status status="PASS" starttime="20181111 15:29:39.654" endtime="20181111 15:29:40.302"></status>
+</kw>
+<status status="FAIL" starttime="20181111 15:29:32.270" endtime="20181111 15:29:40.302" critical="yes">List with locator 'class=product_list' not found.</status>
+</test>
+<status status="FAIL" starttime="20181111 15:29:32.144" endtime="20181111 15:29:40.304"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="HW4">HW4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

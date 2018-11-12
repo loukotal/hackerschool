@@ -1,0 +1,79 @@
+1541944817119	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/c4/q75b9qkx7_51f49jzsc92d480000gn/T/rust_mozprofile.DTxxEy0vtBnZ"
+1541944818089	Marionette	INFO	Enabled via --marionette
+2018-11-11 15:00:19.368 plugin-container[15827:13454442] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x1513b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-11 15:00:19.721 plugin-container[15827:13454442] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10d9e6ee0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2018-11-11 15:00:19.725 plugin-container[15827:13454443] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1541944819946	Marionette	INFO	Listening on port 61317
+1541944819990	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541944820051	Marionette	DEBUG	Register listener.js for window 2147483649
+1541944820140	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1541944821229	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1541944821229	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1541944823453	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+1541944823768	Marionette	DEBUG	Received DOM event "pageshow" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1541945380747	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/c4/q75b9qkx7_51f49jzsc92d480000gn/T/rust_mozprofile.KylEYp3hUCVe"
+1541945381305	Marionette	INFO	Enabled via --marionette
+2018-11-11 15:09:42.210 plugin-container[15948:13471994] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x1503b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-11 15:09:42.441 plugin-container[15948:13471994] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x11783fdc0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2018-11-11 15:09:42.447 plugin-container[15948:13471996] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1541945382568	Marionette	INFO	Listening on port 63278
+1541945382623	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541945382670	Marionette	DEBUG	Register listener.js for window 2147483649
+1541945382698	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1541945383425	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1541945383425	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1541945385578	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+1541945386449	Marionette	DEBUG	Received DOM event "pageshow" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+1541945387112	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1541945955025	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/c4/q75b9qkx7_51f49jzsc92d480000gn/T/rust_mozprofile.lxeywS42H7Lb"
+1541945955657	Marionette	INFO	Enabled via --marionette
+2018-11-11 15:19:16.714 plugin-container[16031:13486220] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xae3b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-11 15:19:16.926 plugin-container[16031:13486220] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10cf3fd90 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2018-11-11 15:19:16.932 plugin-container[16031:13486231] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1541945957170	Marionette	INFO	Listening on port 49382
+1541945957190	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541945957237	Marionette	DEBUG	Register listener.js for window 2147483649
+1541945957279	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1541945958228	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1541945958228	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1541945960185	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+1541945960606	Marionette	DEBUG	Received DOM event "pageshow" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+1541945961275	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1541946522693	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/c4/q75b9qkx7_51f49jzsc92d480000gn/T/rust_mozprofile.RkSTrf33dpvq"
+1541946523312	Marionette	INFO	Enabled via --marionette
+2018-11-11 15:28:44.286 plugin-container[16116:13498604] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xad2b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-11 15:28:44.580 plugin-container[16116:13498604] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x1132a5250 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2018-11-11 15:28:44.583 plugin-container[16116:13498606] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1541946524673	Marionette	INFO	Listening on port 51826
+1541946524751	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541946524806	Marionette	DEBUG	Register listener.js for window 2147483649
+1541946524839	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1541946525550	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1541946525550	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1541946527737	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+1541946527957	Marionette	DEBUG	Received DOM event "pageshow" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+1541946528633	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1541946573304	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/c4/q75b9qkx7_51f49jzsc92d480000gn/T/rust_mozprofile.sDRFuwCWIcDM"
+1541946573777	Marionette	INFO	Enabled via --marionette
+2018-11-11 15:29:34.675 plugin-container[16151:13500485] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x15143, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-11 15:29:34.880 plugin-container[16151:13500485] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=257 "The file “com.apple.ViewBridge.plist” couldn’t be opened because you don’t have permission to view it." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x10dba14f0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+2018-11-11 15:29:34.886 plugin-container[16151:13500486] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+1541946575061	Marionette	INFO	Listening on port 52092
+1541946575159	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541946575208	Marionette	DEBUG	Register listener.js for window 2147483649
+1541946575227	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1541946575920	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1541946575921	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1541946578369	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+1541946578781	Marionette	DEBUG	Received DOM event "pageshow" for "http://automationpractice.com/index.php?id_category=3&controller=category"
+1541946579465	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
