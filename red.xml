@@ -3,6 +3,7 @@
     <configVersion>2</configVersion>
     <relativeTo>WORKSPACE</relativeTo>
     <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="/anaconda3/lib/python3.6/site-packages"/>
+    <referencedLibrary type="PYTHON" name="REST" path="/anaconda3/lib/python3.6/site-packages"/>
     <pythonpath/>
     <classpath/>
     <excludedForValidation/>

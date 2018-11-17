@@ -16,3 +16,8 @@ Open Browser On Women Category
 Close Browser and Capture Screenshot
     SeleniumLibrary.Capture Page Screenshot    
     SeleniumLibrary.Close Browser          
+    
+Go To Women Category
+    Wait Until Page Contains Element       ${cat_name}
+    Click Element                          ${cat_name}
+    Wait Until Page Contains Element       ${left_column}       
