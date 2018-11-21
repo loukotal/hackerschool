@@ -3,21 +3,46 @@ Library    SeleniumLibrary
 Variables	../Objects/Automation_practice/Automation_practice.py
 
 *** Variables ***
-${url_base}    http://automationpractice.com/index.php
-${url_women_cat}    http://automationpractice.com/index.php?id_category=3&controller=category
+${url_base}    http://practice.automationtesting.in/
+${url_shop}    http://practice.automationtesting.in/shop/
 ${browser}    firefox
 
 *** Keywords ***
-Open Browser On Women Category
-    SeleniumLibrary.Open Browser    ${url_women_cat}    ${browser}
+Open Browser On Shop Category
+    SeleniumLibrary.Open Browser    ${url_shop}    ${browser}
     SeleniumLibrary.Maximize Browser Window
-    
+
+
+Open Browser On Base Url
+    SeleniumLibrary.Open Browser    ${url_base}    ${browser}
+    SeleniumLibrary.Maximize Browser Window
     
 Close Browser and Capture Screenshot
     SeleniumLibrary.Capture Page Screenshot    
     SeleniumLibrary.Close Browser          
     
-Go To Women Category
-    Wait Until Page Contains Element       ${cat_name}
-    Click Element                          ${cat_name}
-    Wait Until Page Contains Element       ${left_column}       
+Go To Shop 
+    [Arguments]                            ${option} 
+    SeleniumLibrary.Wait Until Page Contains Element       ${option}
+    SeleniumLibrary.Click Element                          ${option}
+    SeleniumLibrary.Wait Until Page Contains Element       ${button_filter} 
+
+Select Category
+    [Arguments]    ${category}  
+    SeleniumLibrary.Wait Until Page Contains Element    ${product_categories}           
+    SeleniumLibrary.Click Element    //*[@id="woocommerce_product_categories-2"]/ul/li[${category}]/a
+    SeleniumLibrary.Wait Until Page Contains Element    ${ul_products}    
+    ${count}=    SeleniumLibrary.Get Element Count    //*[@id="content"]/ul/li
+    BuiltIn.Should Be Equal    ${category_enum[${category}][1]}     ${count} 
+    SeleniumLibrary.Capture Page Screenshot       
+    
+    
+Select Sort Criterion By Label
+    [Arguments]    ${sort_criterion}
+    Select From List By Label    ${dropdown_sort}    ${sort_criterion}
+    SeleniumLibrary.Wait Until Page Contains Element    ${ul_products}
+    SeleniumLibrary.Element Text Should Be    //*[@id="content"]/ul/li[1]/a[1]/h3    ${sorting["${sort_criterion}"]}  
+    SeleniumLibrary.Capture Page Screenshot
+
+    
+    
